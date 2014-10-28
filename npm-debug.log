@@ -1,0 +1,699 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   '-g',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   'express-generator',
+1 verbose cli   'supervisor' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'express', null ]
+5 verbose cache add name=undefined spec="express" args=["express",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express',
+6 verbose parsed url   path: 'express',
+6 verbose parsed url   href: 'express' }
+7 verbose cache add [ 'express-generator', null ]
+8 verbose cache add name=undefined spec="express-generator" args=["express-generator",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'express-generator',
+9 verbose parsed url   path: 'express-generator',
+9 verbose parsed url   href: 'express-generator' }
+10 verbose cache add [ 'supervisor', null ]
+11 verbose cache add name=undefined spec="supervisor" args=["supervisor",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'supervisor',
+12 verbose parsed url   path: 'supervisor',
+12 verbose parsed url   href: 'supervisor' }
+13 silly lockFile f3c62de4-express express
+14 verbose lock express /Users/mickod/.npm/f3c62de4-express.lock
+15 silly lockFile 198a68d8-express-generator express-generator
+16 verbose lock express-generator /Users/mickod/.npm/198a68d8-express-generator.lock
+17 silly lockFile 0f4d09e4-supervisor supervisor
+18 verbose lock supervisor /Users/mickod/.npm/0f4d09e4-supervisor.lock
+19 silly lockFile f3c62de4-express express
+20 silly lockFile f3c62de4-express express
+21 silly lockFile 198a68d8-express-generator express-generator
+22 silly lockFile 198a68d8-express-generator express-generator
+23 silly lockFile 0f4d09e4-supervisor supervisor
+24 silly lockFile 0f4d09e4-supervisor supervisor
+25 verbose addNamed [ 'express', '' ]
+26 verbose addNamed [ null, '*' ]
+27 silly lockFile 64a534c1-express express@
+28 verbose lock express@ /Users/mickod/.npm/64a534c1-express.lock
+29 verbose addNamed [ 'express-generator', '' ]
+30 verbose addNamed [ null, '*' ]
+31 silly lockFile bd41e3d3-express-generator express-generator@
+32 verbose lock express-generator@ /Users/mickod/.npm/bd41e3d3-express-generator.lock
+33 verbose addNamed [ 'supervisor', '' ]
+34 verbose addNamed [ null, '*' ]
+35 silly lockFile b28163ae-supervisor supervisor@
+36 verbose lock supervisor@ /Users/mickod/.npm/b28163ae-supervisor.lock
+37 silly addNameRange { name: 'express', range: '*', hasData: false }
+38 silly addNameRange { name: 'express-generator', range: '*', hasData: false }
+39 verbose request where is /express
+40 verbose request registry https://registry.npmjs.org/
+41 verbose request id 39fa518a9cfd6911
+42 verbose url raw /express
+43 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+44 verbose url resolved https://registry.npmjs.org/express
+45 verbose request where is https://registry.npmjs.org/express
+46 info trying registry request attempt 1 at 19:17:48
+47 http GET https://registry.npmjs.org/express
+48 silly addNameRange { name: 'supervisor', range: '*', hasData: false }
+49 verbose request where is /express-generator
+50 verbose request registry https://registry.npmjs.org/
+51 verbose url raw /express-generator
+52 verbose url resolving [ 'https://registry.npmjs.org/', './express-generator' ]
+53 verbose url resolved https://registry.npmjs.org/express-generator
+54 verbose request where is https://registry.npmjs.org/express-generator
+55 info trying registry request attempt 1 at 19:17:48
+56 http GET https://registry.npmjs.org/express-generator
+57 verbose request where is /supervisor
+58 verbose request registry https://registry.npmjs.org/
+59 verbose url raw /supervisor
+60 verbose url resolving [ 'https://registry.npmjs.org/', './supervisor' ]
+61 verbose url resolved https://registry.npmjs.org/supervisor
+62 verbose request where is https://registry.npmjs.org/supervisor
+63 info trying registry request attempt 1 at 19:17:48
+64 http GET https://registry.npmjs.org/supervisor
+65 http 200 https://registry.npmjs.org/express
+66 silly registry.get cb [ 200,
+66 silly registry.get   { date: 'Tue, 28 Oct 2014 19:17:48 GMT',
+66 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+66 silly registry.get     etag: '"4OVMMS5WT0I4TSGLDP3E9TDE5"',
+66 silly registry.get     'content-type': 'application/json',
+66 silly registry.get     'cache-control': 'max-age=60',
+66 silly registry.get     'content-length': '406194',
+66 silly registry.get     'accept-ranges': 'bytes',
+66 silly registry.get     via: '1.1 varnish',
+66 silly registry.get     age: '40',
+66 silly registry.get     'x-served-by': 'cache-fra1243-FRA',
+66 silly registry.get     'x-cache': 'HIT',
+66 silly registry.get     'x-cache-hits': '1',
+66 silly registry.get     'x-timer': 'S1414523868.991223,VS0,VE1',
+66 silly registry.get     vary: 'Accept',
+66 silly registry.get     'keep-alive': 'timeout=10, max=50',
+66 silly registry.get     connection: 'Keep-Alive' } ]
+67 silly addNameRange number 2 { name: 'express', range: '*', hasData: true }
+68 silly addNameRange versions [ 'express',
+68 silly addNameRange   [ '0.14.0',
+68 silly addNameRange     '0.14.1',
+68 silly addNameRange     '1.0.0',
+68 silly addNameRange     '1.0.1',
+68 silly addNameRange     '1.0.2',
+68 silly addNameRange     '1.0.3',
+68 silly addNameRange     '1.0.4',
+68 silly addNameRange     '1.0.5',
+68 silly addNameRange     '1.0.6',
+68 silly addNameRange     '1.0.7',
+68 silly addNameRange     '1.0.8',
+68 silly addNameRange     '2.0.0',
+68 silly addNameRange     '2.1.0',
+68 silly addNameRange     '2.1.1',
+68 silly addNameRange     '2.2.0',
+68 silly addNameRange     '2.2.1',
+68 silly addNameRange     '2.2.2',
+68 silly addNameRange     '2.3.0',
+68 silly addNameRange     '2.3.1',
+68 silly addNameRange     '2.3.2',
+68 silly addNameRange     '2.3.3',
+68 silly addNameRange     '2.3.4',
+68 silly addNameRange     '2.3.5',
+68 silly addNameRange     '2.3.6',
+68 silly addNameRange     '2.3.7',
+68 silly addNameRange     '2.3.8',
+68 silly addNameRange     '2.3.9',
+68 silly addNameRange     '2.3.10',
+68 silly addNameRange     '2.3.11',
+68 silly addNameRange     '2.3.12',
+68 silly addNameRange     '2.4.0',
+68 silly addNameRange     '2.4.1',
+68 silly addNameRange     '2.4.2',
+68 silly addNameRange     '2.4.3',
+68 silly addNameRange     '2.4.4',
+68 silly addNameRange     '2.4.5',
+68 silly addNameRange     '2.4.6',
+68 silly addNameRange     '2.4.7',
+68 silly addNameRange     '2.5.0',
+68 silly addNameRange     '2.5.1',
+68 silly addNameRange     '2.5.2',
+68 silly addNameRange     '2.5.3',
+68 silly addNameRange     '2.5.4',
+68 silly addNameRange     '2.5.5',
+68 silly addNameRange     '2.5.6',
+68 silly addNameRange     '2.5.7',
+68 silly addNameRange     '2.5.8',
+68 silly addNameRange     '2.5.9',
+68 silly addNameRange     '2.5.10',
+68 silly addNameRange     '2.5.11',
+68 silly addNameRange     '3.0.0',
+68 silly addNameRange     '3.0.1',
+68 silly addNameRange     '3.0.2',
+68 silly addNameRange     '3.0.3',
+68 silly addNameRange     '3.0.4',
+68 silly addNameRange     '3.0.5',
+68 silly addNameRange     '3.0.6',
+68 silly addNameRange     '3.1.0',
+68 silly addNameRange     '3.1.1',
+68 silly addNameRange     '3.1.2',
+68 silly addNameRange     '3.2.0',
+68 silly addNameRange     '3.2.1',
+68 silly addNameRange     '3.2.2',
+68 silly addNameRange     '3.2.3',
+68 silly addNameRange     '3.2.4',
+68 silly addNameRange     '3.2.5',
+68 silly addNameRange     '3.2.6',
+68 silly addNameRange     '3.3.0',
+68 silly addNameRange     '3.3.1',
+68 silly addNameRange     '3.3.2',
+68 silly addNameRange     '3.3.3',
+68 silly addNameRange     '3.3.4',
+68 silly addNameRange     '3.3.5',
+68 silly addNameRange     '3.3.6',
+68 silly addNameRange     '1.0.0-beta',
+68 silly addNameRange     '1.0.0-beta2',
+68 silly addNameRange     '1.0.0-rc',
+68 silly addNameRange     '1.0.0-rc2',
+68 silly addNameRange     '1.0.0-rc3',
+68 silly addNameRange     '1.0.0-rc4',
+68 silly addNameRange     '2.0.0-beta',
+68 silly addNameRange     '2.0.0-beta2',
+68 silly addNameRange     '2.0.0-beta3',
+68 silly addNameRange     '2.0.0-rc',
+68 silly addNameRange     '2.0.0-rc2',
+68 silly addNameRange     '2.0.0-rc3',
+68 silly addNameRange     '3.0.0-alpha1',
+68 silly addNameRange     '3.0.0-alpha2',
+68 silly addNameRange     '3.0.0-alpha3',
+68 silly addNameRange     '3.0.0-alpha4',
+68 silly addNameRange     '3.0.0-alpha5',
+68 silly addNameRange     '3.0.0-beta1',
+68 silly addNameRange     '3.0.0-beta2',
+68 silly addNameRange     '3.0.0-beta3',
+68 silly addNameRange     '3.0.0-beta4',
+68 silly addNameRange     '3.0.0-beta6',
+68 silly addNameRange     '3.0.0-beta7',
+68 silly addNameRange     '3.0.0-rc1',
+68 silly addNameRange     '3.0.0-rc2',
+68 silly addNameRange     '3.0.0-rc3',
+68 silly addNameRange     '3.0.0-rc4',
+68 silly addNameRange     '3.0.0-rc5',
+68 silly addNameRange     '3.3.7',
+68 silly addNameRange     '3.3.8',
+68 silly addNameRange     '3.4.0',
+68 silly addNameRange     '3.4.1',
+68 silly addNameRange     '3.4.2',
+68 silly addNameRange     '3.4.3',
+68 silly addNameRange     '3.4.4',
+68 silly addNameRange     '3.4.5',
+68 silly addNameRange     '3.4.6',
+68 silly addNameRange     '3.4.7',
+68 silly addNameRange     '3.4.8',
+68 silly addNameRange     '4.0.0-rc1',
+68 silly addNameRange     '4.0.0-rc2',
+68 silly addNameRange     '3.5.0',
+68 silly addNameRange     '4.0.0-rc3',
+68 silly addNameRange     '4.0.0-rc4',
+68 silly addNameRange     '3.5.1',
+68 silly addNameRange     '4.0.0',
+68 silly addNameRange     '3.5.2',
+68 silly addNameRange     '4.1.0',
+68 silly addNameRange     '4.1.1',
+68 silly addNameRange     '3.5.3',
+68 silly addNameRange     '4.1.2',
+68 silly addNameRange     '3.6.0',
+68 silly addNameRange     '4.2.0',
+68 silly addNameRange     '3.7.0',
+68 silly addNameRange     '3.8.0',
+68 silly addNameRange     '4.3.0',
+68 silly addNameRange     '4.3.1',
+68 silly addNameRange     '3.8.1',
+68 silly addNameRange     '4.3.2',
+68 silly addNameRange     '3.9.0',
+68 silly addNameRange     '4.4.0',
+68 silly addNameRange     '4.4.1',
+68 silly addNameRange     '3.10.0',
+68 silly addNameRange     '3.10.1',
+68 silly addNameRange     '3.10.2',
+68 silly addNameRange     '3.10.3',
+68 silly addNameRange     '3.10.4',
+68 silly addNameRange     '4.4.2',
+68 silly addNameRange     '3.10.5',
+68 silly addNameRange     '4.4.3',
+68 silly addNameRange     '3.11.0',
+68 silly addNameRange     '4.4.4',
+68 silly addNameRange     '3.12.0',
+68 silly addNameRange     '3.12.1',
+68 silly addNameRange     '4.4.5',
+68 silly addNameRange     '3.13.0',
+68 silly addNameRange     '4.5.0',
+68 silly addNameRange     '4.5.1',
+68 silly addNameRange     '3.14.0',
+68 silly addNameRange     '4.6.0',
+68 silly addNameRange     '4.6.1',
+68 silly addNameRange     '3.15.0',
+68 silly addNameRange     '4.7.0',
+68 silly addNameRange     '3.15.1',
+68 silly addNameRange     '4.7.1',
+68 silly addNameRange     '3.15.2',
+68 silly addNameRange     '4.7.2',
+68 silly addNameRange     '4.7.3',
+68 silly addNameRange     '3.15.3',
+68 silly addNameRange     '4.7.4',
+68 silly addNameRange     '3.16.0',
+68 silly addNameRange     '4.8.0',
+68 silly addNameRange     '3.16.1',
+68 silly addNameRange     '4.8.1',
+68 silly addNameRange     '3.16.2',
+68 silly addNameRange     '4.8.2',
+68 silly addNameRange     '3.16.3',
+68 silly addNameRange     '3.16.4',
+68 silly addNameRange     '4.8.3',
+68 silly addNameRange     '3.16.5',
+68 silly addNameRange     '3.16.6',
+68 silly addNameRange     '4.8.4',
+68 silly addNameRange     '3.16.7',
+68 silly addNameRange     '4.8.5',
+68 silly addNameRange     '3.16.8',
+68 silly addNameRange     '4.8.6',
+68 silly addNameRange     '3.16.9',
+68 silly addNameRange     '4.8.7',
+68 silly addNameRange     '3.16.10',
+68 silly addNameRange     '4.8.8',
+68 silly addNameRange     '3.17.0',
+68 silly addNameRange     '3.17.1',
+68 silly addNameRange     '4.9.0',
+68 silly addNameRange     '3.17.2',
+68 silly addNameRange     '4.9.1',
+68 silly addNameRange     '4.9.2',
+68 silly addNameRange     '3.17.3',
+68 silly addNameRange     '4.9.3',
+68 silly addNameRange     '3.17.4',
+68 silly addNameRange     '4.9.4',
+68 silly addNameRange     '3.17.5',
+68 silly addNameRange     '4.9.5',
+68 silly addNameRange     '3.17.6',
+68 silly addNameRange     '3.17.7',
+68 silly addNameRange     '4.9.6',
+68 silly addNameRange     '4.9.7',
+68 silly addNameRange     '3.17.8',
+68 silly addNameRange     '4.9.8',
+68 silly addNameRange     '3.18.0',
+68 silly addNameRange     '3.18.1',
+68 silly addNameRange     '4.10.0' ] ]
+69 verbose addNamed [ 'express', '4.10.0' ]
+70 verbose addNamed [ '4.10.0', '4.10.0' ]
+71 silly lockFile 1371ef67-express-4-10-0 express@4.10.0
+72 verbose lock express@4.10.0 /Users/mickod/.npm/1371ef67-express-4-10-0.lock
+73 silly lockFile 18de4d8a-s-org-express-express-4-10-0-tgz https://registry.npmjs.org/express/-/express-4.10.0.tgz
+74 verbose lock https://registry.npmjs.org/express/-/express-4.10.0.tgz /Users/mickod/.npm/18de4d8a-s-org-express-express-4-10-0-tgz.lock
+75 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.10.0.tgz',
+75 verbose addRemoteTarball   '52719d5a1cde4edd47b87da43b1a7c337d761a12' ]
+76 info retry fetch attempt 1 at 19:17:49
+77 verbose fetch to= /var/folders/4b/j5p7y7m91n1gkkv9lljwmjgm0000gn/T/npm-540-c2ncsmjD/registry.npmjs.org/express/-/express-4.10.0.tgz
+78 http GET https://registry.npmjs.org/express/-/express-4.10.0.tgz
+79 http 200 https://registry.npmjs.org/supervisor
+80 silly registry.get cb [ 200,
+80 silly registry.get   { date: 'Tue, 28 Oct 2014 19:17:49 GMT',
+80 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+80 silly registry.get     etag: '"BGHHHRIW12YTFH9N36N5PNAWX"',
+80 silly registry.get     'content-type': 'application/json',
+80 silly registry.get     'cache-control': 'max-age=60',
+80 silly registry.get     'content-length': '45175',
+80 silly registry.get     'accept-ranges': 'bytes',
+80 silly registry.get     via: '1.1 varnish',
+80 silly registry.get     age: '0',
+80 silly registry.get     'x-served-by': 'cache-fra1244-FRA',
+80 silly registry.get     'x-cache': 'HIT',
+80 silly registry.get     'x-cache-hits': '1',
+80 silly registry.get     'x-timer': 'S1414523869.005184,VS0,VE425',
+80 silly registry.get     vary: 'Accept',
+80 silly registry.get     'keep-alive': 'timeout=10, max=50',
+80 silly registry.get     connection: 'Keep-Alive' } ]
+81 silly addNameRange number 2 { name: 'supervisor', range: '*', hasData: true }
+82 silly addNameRange versions [ 'supervisor',
+82 silly addNameRange   [ '0.0.4',
+82 silly addNameRange     '0.0.5',
+82 silly addNameRange     '0.0.6',
+82 silly addNameRange     '0.1.0',
+82 silly addNameRange     '0.1.1',
+82 silly addNameRange     '0.1.2',
+82 silly addNameRange     '0.1.3',
+82 silly addNameRange     '0.2.0',
+82 silly addNameRange     '0.3.0',
+82 silly addNameRange     '0.3.1',
+82 silly addNameRange     '0.3.2',
+82 silly addNameRange     '0.3.3',
+82 silly addNameRange     '0.3.4',
+82 silly addNameRange     '0.3.5',
+82 silly addNameRange     '0.3.6',
+82 silly addNameRange     '0.4.0',
+82 silly addNameRange     '0.4.1',
+82 silly addNameRange     '0.5.0',
+82 silly addNameRange     '0.5.1',
+82 silly addNameRange     '0.5.2',
+82 silly addNameRange     '0.5.3',
+82 silly addNameRange     '0.5.4',
+82 silly addNameRange     '0.5.5',
+82 silly addNameRange     '0.5.6',
+82 silly addNameRange     '0.5.7',
+82 silly addNameRange     '0.6.0' ] ]
+83 verbose addNamed [ 'supervisor', '0.6.0' ]
+84 verbose addNamed [ '0.6.0', '0.6.0' ]
+85 silly lockFile 0362a428-supervisor-0-6-0 supervisor@0.6.0
+86 verbose lock supervisor@0.6.0 /Users/mickod/.npm/0362a428-supervisor-0-6-0.lock
+87 silly lockFile 3607d2d5--supervisor-supervisor-0-6-0-tgz https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+88 verbose lock https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz /Users/mickod/.npm/3607d2d5--supervisor-supervisor-0-6-0-tgz.lock
+89 verbose addRemoteTarball [ 'https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz',
+89 verbose addRemoteTarball   'c8b965be5ae31822685f176df1f178dd5d85c332' ]
+90 info retry fetch attempt 1 at 19:17:49
+91 verbose fetch to= /var/folders/4b/j5p7y7m91n1gkkv9lljwmjgm0000gn/T/npm-540-c2ncsmjD/registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+92 http GET https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+93 http 200 https://registry.npmjs.org/express/-/express-4.10.0.tgz
+94 http 200 https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+95 silly lockFile 18de4d8a-s-org-express-express-4-10-0-tgz https://registry.npmjs.org/express/-/express-4.10.0.tgz
+96 silly lockFile 18de4d8a-s-org-express-express-4-10-0-tgz https://registry.npmjs.org/express/-/express-4.10.0.tgz
+97 silly lockFile 3607d2d5--supervisor-supervisor-0-6-0-tgz https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+98 silly lockFile 3607d2d5--supervisor-supervisor-0-6-0-tgz https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz
+99 silly lockFile 1371ef67-express-4-10-0 express@4.10.0
+100 silly lockFile 1371ef67-express-4-10-0 express@4.10.0
+101 silly lockFile 0362a428-supervisor-0-6-0 supervisor@0.6.0
+102 silly lockFile 0362a428-supervisor-0-6-0 supervisor@0.6.0
+103 silly lockFile 64a534c1-express express@
+104 silly lockFile 64a534c1-express express@
+105 silly lockFile b28163ae-supervisor supervisor@
+106 silly lockFile b28163ae-supervisor supervisor@
+107 http 200 https://registry.npmjs.org/express-generator
+108 silly registry.get cb [ 200,
+108 silly registry.get   { date: 'Tue, 28 Oct 2014 19:17:49 GMT',
+108 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+108 silly registry.get     etag: '"D8MAOBCOVFO78JBUQNLK8DEX0"',
+108 silly registry.get     'content-type': 'application/json',
+108 silly registry.get     'cache-control': 'max-age=60',
+108 silly registry.get     'content-length': '12149',
+108 silly registry.get     'accept-ranges': 'bytes',
+108 silly registry.get     via: '1.1 varnish',
+108 silly registry.get     age: '0',
+108 silly registry.get     'x-served-by': 'cache-fra1224-FRA',
+108 silly registry.get     'x-cache': 'HIT',
+108 silly registry.get     'x-cache-hits': '1',
+108 silly registry.get     'x-timer': 'S1414523869.005898,VS0,VE708',
+108 silly registry.get     vary: 'Accept',
+108 silly registry.get     'keep-alive': 'timeout=10, max=50',
+108 silly registry.get     connection: 'Keep-Alive' } ]
+109 silly addNameRange number 2 { name: 'express-generator', range: '*', hasData: true }
+110 silly addNameRange versions [ 'express-generator',
+110 silly addNameRange   [ '1.0.0', '3.0.0', '4.0.0', '4.2.0', '4.8.0', '4.9.0' ] ]
+111 verbose addNamed [ 'express-generator', '4.9.0' ]
+112 verbose addNamed [ '4.9.0', '4.9.0' ]
+113 silly lockFile 0580e4a0-express-generator-4-9-0 express-generator@4.9.0
+114 verbose lock express-generator@4.9.0 /Users/mickod/.npm/0580e4a0-express-generator-4-9-0.lock
+115 silly lockFile 995b2f4d-ator-express-generator-4-9-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+116 verbose lock https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz /Users/mickod/.npm/995b2f4d-ator-express-generator-4-9-0-tgz.lock
+117 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz',
+117 verbose addRemoteTarball   'f5da999d12ae4b072f6e61055633f7ad9e49fd73' ]
+118 info retry fetch attempt 1 at 19:17:49
+119 verbose fetch to= /var/folders/4b/j5p7y7m91n1gkkv9lljwmjgm0000gn/T/npm-540-c2ncsmjD/registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+120 http GET https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+121 http 200 https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+122 silly lockFile 995b2f4d-ator-express-generator-4-9-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+123 silly lockFile 995b2f4d-ator-express-generator-4-9-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+124 silly lockFile 0580e4a0-express-generator-4-9-0 express-generator@4.9.0
+125 silly lockFile 0580e4a0-express-generator-4-9-0 express-generator@4.9.0
+126 silly lockFile bd41e3d3-express-generator express-generator@
+127 silly lockFile bd41e3d3-express-generator express-generator@
+128 silly resolved [ { name: 'express',
+128 silly resolved     description: 'Fast, unopinionated, minimalist web framework',
+128 silly resolved     version: '4.10.0',
+128 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+128 silly resolved     contributors:
+128 silly resolved      [ [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object] ],
+128 silly resolved     license: 'MIT',
+128 silly resolved     repository: { type: 'git', url: 'https://github.com/strongloop/express' },
+128 silly resolved     homepage: 'http://expressjs.com/',
+128 silly resolved     keywords:
+128 silly resolved      [ 'express',
+128 silly resolved        'framework',
+128 silly resolved        'sinatra',
+128 silly resolved        'web',
+128 silly resolved        'rest',
+128 silly resolved        'restful',
+128 silly resolved        'router',
+128 silly resolved        'app',
+128 silly resolved        'api' ],
+128 silly resolved     dependencies:
+128 silly resolved      { accepts: '~1.1.2',
+128 silly resolved        'content-disposition': '0.5.0',
+128 silly resolved        'cookie-signature': '1.0.5',
+128 silly resolved        debug: '~2.1.0',
+128 silly resolved        depd: '~1.0.0',
+128 silly resolved        'escape-html': '1.0.1',
+128 silly resolved        etag: '~1.5.0',
+128 silly resolved        finalhandler: '0.3.2',
+128 silly resolved        fresh: '0.2.4',
+128 silly resolved        'media-typer': '0.3.0',
+128 silly resolved        methods: '1.1.0',
+128 silly resolved        'on-finished': '~2.1.1',
+128 silly resolved        parseurl: '~1.3.0',
+128 silly resolved        'path-to-regexp': '0.1.3',
+128 silly resolved        'proxy-addr': '~1.0.3',
+128 silly resolved        qs: '2.3.0',
+128 silly resolved        'range-parser': '~1.0.2',
+128 silly resolved        send: '0.10.1',
+128 silly resolved        'serve-static': '~1.7.1',
+128 silly resolved        'type-is': '~1.5.2',
+128 silly resolved        vary: '~1.0.0',
+128 silly resolved        cookie: '0.1.2',
+128 silly resolved        'merge-descriptors': '0.0.2',
+128 silly resolved        'utils-merge': '1.0.0' },
+128 silly resolved     devDependencies:
+128 silly resolved      { after: '0.8.1',
+128 silly resolved        istanbul: '0.3.2',
+128 silly resolved        mocha: '~2.0.0',
+128 silly resolved        should: '~4.1.0',
+128 silly resolved        supertest: '~0.14.0',
+128 silly resolved        ejs: '~1.0.0',
+128 silly resolved        marked: '0.3.2',
+128 silly resolved        hjs: '~0.0.6',
+128 silly resolved        'body-parser': '~1.9.1',
+128 silly resolved        'connect-redis': '~2.1.0',
+128 silly resolved        'cookie-parser': '~1.3.3',
+128 silly resolved        'express-session': '~1.9.1',
+128 silly resolved        jade: '~1.7.0',
+128 silly resolved        'method-override': '~2.3.0',
+128 silly resolved        morgan: '~1.4.1',
+128 silly resolved        multiparty: '~4.0.0',
+128 silly resolved        vhost: '~3.0.0' },
+128 silly resolved     engines: { node: '>= 0.10.0' },
+128 silly resolved     files: [ 'LICENSE', 'History.md', 'Readme.md', 'index.js', 'lib/' ],
+128 silly resolved     scripts:
+128 silly resolved      { test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+128 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+128 silly resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/',
+128 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/' },
+128 silly resolved     gitHead: 'd40dc651f3561a4978fdc9c40e7fc802261d99ce',
+128 silly resolved     bugs: { url: 'https://github.com/strongloop/express/issues' },
+128 silly resolved     _id: 'express@4.10.0',
+128 silly resolved     _shasum: '52719d5a1cde4edd47b87da43b1a7c337d761a12',
+128 silly resolved     _from: 'express@',
+128 silly resolved     _npmVersion: '1.4.21',
+128 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+128 silly resolved     maintainers:
+128 silly resolved      [ [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object] ],
+128 silly resolved     dist:
+128 silly resolved      { shasum: '52719d5a1cde4edd47b87da43b1a7c337d761a12',
+128 silly resolved        tarball: 'http://registry.npmjs.org/express/-/express-4.10.0.tgz' },
+128 silly resolved     directories: {},
+128 silly resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.10.0.tgz' },
+128 silly resolved   { name: 'supervisor',
+128 silly resolved     version: '0.6.0',
+128 silly resolved     description: 'A supervisor program for running nodejs programs',
+128 silly resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+128 silly resolved     contributors:
+128 silly resolved      [ [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object],
+128 silly resolved        [Object] ],
+128 silly resolved     repository:
+128 silly resolved      { type: 'git',
+128 silly resolved        url: 'git://github.com/isaacs/node-supervisor.git' },
+128 silly resolved     bugs: { url: 'https://github.com/isaacs/node-supervisor/issues' },
+128 silly resolved     homepage: 'https://github.com/isaacs/node-supervisor/',
+128 silly resolved     main: 'lib/supervisor.js',
+128 silly resolved     bin:
+128 silly resolved      { 'node-supervisor': 'lib/cli-wrapper.js',
+128 silly resolved        supervisor: 'lib/cli-wrapper.js' },
+128 silly resolved     engines: { node: '>=0.6.0' },
+128 silly resolved     preferGlobal: true,
+128 silly resolved     _id: 'supervisor@0.6.0',
+128 silly resolved     dist:
+128 silly resolved      { shasum: 'c8b965be5ae31822685f176df1f178dd5d85c332',
+128 silly resolved        tarball: 'http://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz' },
+128 silly resolved     _from: 'supervisor@',
+128 silly resolved     _npmVersion: '1.4.3',
+128 silly resolved     _npmUser: { name: 'iangreenleaf', email: 'ian.greenleaf@gmail.com' },
+128 silly resolved     maintainers: [ [Object] ],
+128 silly resolved     directories: {},
+128 silly resolved     _shasum: 'c8b965be5ae31822685f176df1f178dd5d85c332',
+128 silly resolved     _resolved: 'https://registry.npmjs.org/supervisor/-/supervisor-0.6.0.tgz' },
+128 silly resolved   { name: 'express-generator',
+128 silly resolved     description: 'Express\' application generator',
+128 silly resolved     version: '4.9.0',
+128 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+128 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+128 silly resolved     keywords:
+128 silly resolved      [ 'express',
+128 silly resolved        'framework',
+128 silly resolved        'sinatra',
+128 silly resolved        'web',
+128 silly resolved        'rest',
+128 silly resolved        'restful',
+128 silly resolved        'router',
+128 silly resolved        'app',
+128 silly resolved        'api' ],
+128 silly resolved     repository: { type: 'git', url: 'https://github.com/expressjs/generator' },
+128 silly resolved     license: 'MIT',
+128 silly resolved     dependencies: { commander: '1.3.2', mkdirp: '0.5.0' },
+128 silly resolved     main: 'bin/express',
+128 silly resolved     preferGlobal: true,
+128 silly resolved     bin: { express: './bin/express' },
+128 silly resolved     devDependencies:
+128 silly resolved      { mocha: '~1.21.4',
+128 silly resolved        rimraf: '~2.2.8',
+128 silly resolved        should: '~4.0.4',
+128 silly resolved        supertest: '~0.13.0' },
+128 silly resolved     engines: { node: '>= 0.8.0' },
+128 silly resolved     files: [ 'LICENSE', 'bin/', 'templates/' ],
+128 silly resolved     scripts:
+128 silly resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+128 silly resolved        'test-travis': 'mocha --reporter spec --bail --check-leaks test/' },
+128 silly resolved     gitHead: 'd00f7fc2c9e3a1f22f740019bab64fc0f579146d',
+128 silly resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+128 silly resolved     homepage: 'https://github.com/expressjs/generator',
+128 silly resolved     _id: 'express-generator@4.9.0',
+128 silly resolved     _shasum: 'f5da999d12ae4b072f6e61055633f7ad9e49fd73',
+128 silly resolved     _from: 'express-generator@',
+128 silly resolved     _npmVersion: '1.4.21',
+128 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+128 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+128 silly resolved     dist:
+128 silly resolved      { shasum: 'f5da999d12ae4b072f6e61055633f7ad9e49fd73',
+128 silly resolved        tarball: 'http://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz' },
+128 silly resolved     directories: {},
+128 silly resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz' } ]
+129 info install express@4.10.0 into /usr/local/lib
+130 info install supervisor@0.6.0 into /usr/local/lib
+131 info install express-generator@4.9.0 into /usr/local/lib
+132 info installOne express@4.10.0
+133 info installOne supervisor@0.6.0
+134 info installOne express-generator@4.9.0
+135 verbose lib/node_modules/express unbuild
+136 verbose lib/node_modules/supervisor unbuild
+137 verbose lib/node_modules/express-generator unbuild
+138 verbose tar unpack /Users/mickod/.npm/express/4.10.0/package.tgz
+139 silly lockFile 365ba7ad-r-local-lib-node-modules-express tar:///usr/local/lib/node_modules/express
+140 verbose lock tar:///usr/local/lib/node_modules/express /Users/mickod/.npm/365ba7ad-r-local-lib-node-modules-express.lock
+141 silly lockFile b07baa32-d-npm-express-4-10-0-package-tgz tar:///Users/mickod/.npm/express/4.10.0/package.tgz
+142 verbose lock tar:///Users/mickod/.npm/express/4.10.0/package.tgz /Users/mickod/.npm/b07baa32-d-npm-express-4-10-0-package-tgz.lock
+143 verbose tar unpack /Users/mickod/.npm/supervisor/0.6.0/package.tgz
+144 silly lockFile 108aea87-ocal-lib-node-modules-supervisor tar:///usr/local/lib/node_modules/supervisor
+145 verbose lock tar:///usr/local/lib/node_modules/supervisor /Users/mickod/.npm/108aea87-ocal-lib-node-modules-supervisor.lock
+146 silly lockFile 037bd3a2-npm-supervisor-0-6-0-package-tgz tar:///Users/mickod/.npm/supervisor/0.6.0/package.tgz
+147 verbose lock tar:///Users/mickod/.npm/supervisor/0.6.0/package.tgz /Users/mickod/.npm/037bd3a2-npm-supervisor-0-6-0-package-tgz.lock
+148 verbose tar unpack /Users/mickod/.npm/express-generator/4.9.0/package.tgz
+149 silly lockFile 2135fd25-b-node-modules-express-generator tar:///usr/local/lib/node_modules/express-generator
+150 verbose lock tar:///usr/local/lib/node_modules/express-generator /Users/mickod/.npm/2135fd25-b-node-modules-express-generator.lock
+151 silly lockFile 1f9c9415-ress-generator-4-9-0-package-tgz tar:///Users/mickod/.npm/express-generator/4.9.0/package.tgz
+152 verbose lock tar:///Users/mickod/.npm/express-generator/4.9.0/package.tgz /Users/mickod/.npm/1f9c9415-ress-generator-4-9-0-package-tgz.lock
+153 silly gunzTarPerm modes [ '755', '644' ]
+154 silly gunzTarPerm modes [ '755', '644' ]
+155 silly gunzTarPerm modes [ '755', '644' ]
+156 error Error: EACCES, mkdir '/usr/local/lib/node_modules/express'
+156 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/express']
+156 error   errno: 3,
+156 error   code: 'EACCES',
+156 error   path: '/usr/local/lib/node_modules/express',
+156 error   fstream_type: 'Directory',
+156 error   fstream_path: '/usr/local/lib/node_modules/express',
+156 error   fstream_class: 'DirWriter',
+156 error   fstream_stack:
+156 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+156 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+156 error      'Object.oncomplete (fs.js:107:15)' ] }
+157 error Please try running this command again as root/Administrator.
+158 error System Darwin 13.4.0
+159 error command "node" "/usr/local/bin/npm" "-g" "install" "express" "express-generator" "supervisor"
+160 error cwd /Users/mickod/Desktop/AMOD/UCD/Project/ColabLocalhostNodejsServer
+161 error node -v v0.10.33
+162 error npm -v 1.4.28
+163 error path /usr/local/lib/node_modules/express
+164 error fstream_path /usr/local/lib/node_modules/express
+165 error fstream_type Directory
+166 error fstream_class DirWriter
+167 error code EACCES
+168 error errno 3
+169 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/express'
+170 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+170 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+170 error fstream_stack Object.oncomplete (fs.js:107:15)
+171 verbose exit [ 3, true ]
