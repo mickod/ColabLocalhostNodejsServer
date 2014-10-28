@@ -4,9 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var fs = require('fs');
 
 var app = express();
 
@@ -37,11 +37,6 @@ router.get('/viewvideos', function(req, res) {
         res.sendfile(__dirname + '/public/viewvideos.html');
 });
 
-// GET: about page route 
-router.get('/about', function(req, res) {
-	res.send('in the about page!');	
-});
-
 // POST: video upload route
 // multer approach
 var multer = require('multer');
@@ -69,23 +64,37 @@ router.get('/uploadprogress', function(req, res) {
 	res.send('File size so far is: ' + fileSizeInMegabytes);
 });
 
-// GET: video file list
+// GET: route to return list of upload videos 
 router.get('/video_list', function(req, res) {
+	
+	// Get the path for the uploaded_video directory - in a real app the video list would likely be taken from 
+	// a database index table, but this is fine for us for now
 	var _p;
-	if (req.query.id == 1) {
-      		_p = path.resolve(__dirname, '..', 'uploaded_videos');
-      		processReq(_p, res);
-    	} else {
-      		if (req.query.id) {
-        		_p = req.query.id;
-        		processReq(_p, res);
-      		} else {
-        		res.json(['No valid data found']);
-      		}	
-    	}
-  });
-
-
+    _p = path.resolve(__dirname, 'uploaded_videos');
+	
+	//Find all the files in the diectory and add to a JSON list to return
+	var resp = [];
+	fs.readdir(_p, function(err, list) {
+		//Check if the list is undefined or empty first and if so just return 
+		if ( typeof list == 'undefined' || !list ) {
+			return;
+		}
+		for (var i = list.length - 1; i >= 0; i--) {
+			
+			// For each file in the directory add an id and filename to the response
+			console.log('Looping through video files in directory: ', list, 'at index: ', i);
+			console.dir(list);
+	    	resp.push( 
+				{"id": path.join(_p, list[i]),
+				"text": list[i]}
+			);
+			console.log('resp at iteration: ', i, " is: ", resp);
+	    }
+		
+		// Set the response to be sent
+		res.json(resp);
+	});
+});
 
 // apply the routes to our application
 app.use('/', router);
