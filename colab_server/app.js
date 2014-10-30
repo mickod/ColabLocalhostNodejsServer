@@ -27,6 +27,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 // get an instance of router
 var router = express.Router();
 
+// Enable CORS - cross domain routing
+app.all('*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+ });
+
 // GET: home page route 
 router.get('/', function(req, res) {
 	res.send('Colab Server default nodejs home page - you shouldnt really be here ...');	
@@ -85,8 +92,8 @@ router.get('/video_list', function(req, res) {
 			console.log('Looping through video files in directory: ', list, 'at index: ', i);
 			console.dir(list);
 	    	resp.push( 
-				{"id": path.join(_p, list[i]),
-				"text": list[i]}
+				{"index": i,
+				"file_name": list[i]}
 			);
 			console.log('resp at iteration: ', i, " is: ", resp);
 	    }
