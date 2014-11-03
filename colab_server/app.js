@@ -48,15 +48,15 @@ router.get('/viewvideos', function(req, res) {
 // multer approach
 var multer = require('multer');
 app.use(multer({dest:'./uploaded_videos/'}));
-router.post('/videoupload', function(req, res) {
+router.post('/web_video_upload', function(req, res) {
 	res.send('Video Uploading');
 	console.dir(req.files);
 });
 
 
 // POST: form video upload (video upload from a user on a website rather than a mobile using a REST API
-router.post('/formvideoupload', function(req, res) {
-        res.sendfile(__dirname + '/public/formvideouploading.html');
+router.post('/web_video_upload', function(req, res) {
+        res.sendFile(__dirname + '/public/formvideouploading.html');
         console.dir(req.files);
 });
 
