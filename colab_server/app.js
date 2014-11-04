@@ -53,27 +53,14 @@ router.post('/web_video_upload', function(req, res) {
 	console.dir(req.files);
 });
 
-
 // POST: form video upload (video upload from a user on a website rather than a mobile using a REST API
 router.post('/web_video_upload', function(req, res) {
         res.sendFile(__dirname + '/public/formvideouploading.html');
         console.dir(req.files);
 });
 
-// GET: file progress route
-router.get('/uploadprogress', function(req, res) {
-        console.dir('Handling file size request');
-	var fs = require("fs");
-	var stats = fs.statSync("myfile.txt");
-	var fileSizeInBytes = stats["size"];
-	//Convert the file size to megabytes 
-	var fileSizeInMegabytes = fileSizeInBytes / 1000000.0;
-	res.send('File size so far is: ' + fileSizeInMegabytes);
-});
-
 // GET: route to return list of upload videos 
 router.get('/video_list', function(req, res) {
-	
 	// Get the path for the uploaded_video directory - in a real app the video list would likely be taken from 
 	// a database index table, but this is fine for us for now
 	var _p;
@@ -101,6 +88,16 @@ router.get('/video_list', function(req, res) {
 		// Set the response to be sent
 		res.json(resp);
 	});
+});
+
+// DELETE: remove a video from the uploaded folder
+//router.route('/delete_video/:id').delete(function(req, res) {
+router.delete('/videos/:id', function(req, res) {
+	console.dir("function: delete_video: " + req.params.id);
+	//Delete the video from the uploaded videos folder
+	var _p;
+    _p = path.resolve(__dirname, 'uploaded_videos', req.params.id);
+	fs.unlink(_p);
 });
 
 // apply the routes to our application
