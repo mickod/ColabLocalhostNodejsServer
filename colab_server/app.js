@@ -20,6 +20,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'uploaded_videos')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ------------------------------- ROUTES: steering GET, POST etc requests -------------------------------
@@ -47,16 +48,24 @@ router.get('/viewvideos', function(req, res) {
 // POST: video upload route
 // multer approach
 var multer = require('multer');
-app.use(multer({dest:'./uploaded_videos/'}));
+app.use(multer({
+	
+	//Set dstination directory
+	dest: path.resolve(__dirname, 'public', 'uploaded_videos'),
+	
+	//Rename file
+	rename: function (fieldname, filename) {
+		//Add the current date and time in ISO format, removing the last 'Z' character this usually
+		//includes
+		var dateNow = new Date();
+	    return filename + "_" + dateNow.toISOString().slice(0,-1)
+	}
+
+}));
+
 router.post('/web_video_upload', function(req, res) {
 	res.send('Video Uploading');
 	console.dir(req.files);
-});
-
-// POST: form video upload (video upload from a user on a website rather than a mobile using a REST API
-router.post('/web_video_upload', function(req, res) {
-        res.sendFile(__dirname + '/public/formvideouploading.html');
-        console.dir(req.files);
 });
 
 // GET: route to return list of upload videos 
@@ -64,7 +73,7 @@ router.get('/video_list', function(req, res) {
 	// Get the path for the uploaded_video directory - in a real app the video list would likely be taken from 
 	// a database index table, but this is fine for us for now
 	var _p;
-    _p = path.resolve(__dirname, 'uploaded_videos');
+    _p = path.resolve(__dirname, 'public', 'uploaded_videos');
 	
 	//Find all the files in the diectory and add to a JSON list to return
 	var resp = [];
@@ -91,12 +100,11 @@ router.get('/video_list', function(req, res) {
 });
 
 // DELETE: remove a video from the uploaded folder
-//router.route('/delete_video/:id').delete(function(req, res) {
-router.delete('/videos/:id', function(req, res) {
+router.delete('/uploaded_videos/:id', function(req, res) {
 	console.dir("function: delete_video: " + req.params.id);
 	//Delete the video from the uploaded videos folder
 	var _p;
-    _p = path.resolve(__dirname, 'uploaded_videos', req.params.id);
+    _p = path.resolve(__dirname, 'public', 'uploaded_videos', req.params.id);
 	fs.unlink(_p);
 });
 
